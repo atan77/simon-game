@@ -1,0 +1,52 @@
+<div class="shell">
+  <div class="board">
+    <h1 class="name">Simon<span class="tm">®</span></h1>
+    <div class="grid">
+      <input type="button" class="green" id="green" value="Green" onClick="selection(0)">
+      <input type="button" class="red" id="red" value="Red" onClick="selection(1)">
+    </div>
+    <div class="grid">
+      <input type="button" class="yellow" id="yellow" value="Yellow" onClick="selection(3)">
+      <input type="button" class="blue" id="blue" value="Blue" onClick="selection(2)">
+    </div>
+    <div class="controls">
+      <div class="display inline">
+        <div>
+          <input type="button" class="counter" id="counter" value=" " onClick="sequence()">
+        </div>
+        <h3 class="label">Sequence Length </h3>
+      </div>
+      <div class="display inline">
+        <div>
+          <input type="button" class="start" id="create" value=" " onClick="sequence()">
+        </div>
+        <h3 class="label">Start Game </h3>
+      </div>
+      <div class="display inline">
+        <div>
+          <input type="button" class="reset" id="reset" value=" " onClick="reset()">
+        </div>
+        <h3 class="label">Reset Game </h3>
+      </div>
+      <div class="display inline">
+        <div>
+          <input type="button" class="strict" id="strict" value=" " onClick="strict()">
+        </div>
+        <h3 class="label">Strict Mode </h3>
+      </div>
+      <div class="status" id="status">
+      </div>
+    </div>
+  </div>
+
+    <!--
+<div class="grid">
+  <input type="button" class="basic" id="play" value="Play Sequence" onClick="playSequence()">
+</div>
+-->
+
+    <p id="followme" class="output">
+      <p id="mysequence" class="output">
+        <p id="mysequencestatus" class="output">
+          <p id="turns" class="output">
+            <p id="speed" class="output"> 
